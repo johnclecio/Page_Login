@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   background-color: #2C3E50;
-  
 }
+
 header, h1{
   background-color: #0A66C2;
   color:black;
@@ -37,17 +37,20 @@ footer {
   width: auto;
   height: 200px;
   padding-block: 65px;
+  margin-top: 700px;
 }
 
 
-.cadastrar {
+.Sign_up {
   display: inline-block;
   background: #fff;
   box-shadow:0 15px 30px blue, 0 15px 12px rgba(0, 0, 0, 0.22);
   border-radius: 25px;
   width: 40%;
-  margin-block: 50px;
-  margin-inline: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .login {
   display: inline-block;
@@ -55,8 +58,10 @@ footer {
   box-shadow:0 15px 30px red, 0 15px 12px rgba(0, 0, 0, 0.22);
   border-radius: 25px;
   width: 40%;
-  margin-block: 50px;
-  margin-inline: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 input, button {
@@ -127,3 +132,61 @@ a {
   font-size: larger;
   font-family: cursive;
 }
+h4 {
+  font-size: 50pt;
+  text-align: end;
+  padding-right: 100px;
+  background-color: #000000;
+  animation: slide-in 2s forwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  .items {
+    width: auto;
+  }
+
+  .login, .Sign_up {
+    margin-block: 150px;
+    width: 300px;
+    border-radius: 25px;
+  }
+  button {
+    width: 200px;
+    font-size: 20px;
+  }
+  label {
+    width: auto;
+    font-size: 20px;
+    padding: 5px;
+  }
+  footer {
+    margin-top: 800px;
+  }
+  h4 {
+    font-size: 20pt;
+    text-align: end;
+    padding-right: 100px;
+    background-color: #000000;
+    animation: slide-in 2s forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+

@@ -1,0 +1,8 @@
+git init 
+git add "nome do Arquivo"
+git commit -m "descrição"
+git branch -M main
+git remote add origin "URL do repositorio"
+git push -u origin main
+
+https://github.com/johnclecio/Page_Login.git
