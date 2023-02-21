@@ -1,43 +1,87 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #2C3E50;
+  
+}
+p {
+  text-align: justify;
+  margin-inline: 30px;
+  font-size: 22px;
+  color: black;
+}
+header {
+  background-color: blue;
+  height: 55px;
+}
+.brand {
+  text-align: start;
+  font-size: 20pt;
+  margin-top: 0px;
+  margin-left: 10px;
+  
+}
+.end {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-right: 10px;
+  margin-top: -50px;
 }
 
-header, h1{
-  background-color: #0A66C2;
-  color:black;
-  padding-top: 10px;
-  font-size: 40px;
-  text-align: center;
+.end li {
+  margin-left: 10px;
 }
+body {
+  background-color: #505f75;
+}
+section {
+  background-color: #505f75;
+  
+}
+
+
+
 h2 {
   color:black;
   padding-top: 10px;
   font-size: 40px;
   text-align: center;
 }
-ul {
-  list-style: none;
-}
-li, .l {
-  background-color: #000000;
-  color: #fff;
-}
-.items{
-  margin-block: 50px;
-  margin-inline: 50px;
+
+.items {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  margin-inline: 50px;
+  padding-block: 20px;
   background-color: #000000;
 }
 
+
+ul {
+  list-style: none;
+}
+
+.items > ul > li  {
+  background-color: #000000;
+  color: #fff;
+}
+
+
+
+
+
 footer {
   width: auto;
-  height: 200px;
+  height: auto;
   padding-block: 65px;
+  background-color: #000000;
+  color: #fff;
+}
+.c {
   margin-top: 700px;
+}
+.l {
+  margin-top: 550px;
 }
 
 
@@ -48,6 +92,7 @@ footer {
   border-radius: 25px;
   width: 40%;
   position: absolute;
+  margin-top: 120px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -84,6 +129,7 @@ h3 {
   transition: -webkit-transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out;
   transition: transfrom 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
+ 
 }
 label{
   display: block;
@@ -188,5 +234,25 @@ h4 {
       transform: translateX(0);
     }
   }
+
+  .end {
+    display: block;
+    flex-direction: column;
+    margin-top: 10px;
+    
+    
+  }
+  header {
+    background-color: blue;
+    height: 150px;
+    
+  }
+  footer {
+    margin-top: 100px;
+  }
+  .brand {
+    text-align: center;
+  }
+  
 }
 
