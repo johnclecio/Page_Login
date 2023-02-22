@@ -2,6 +2,13 @@
   padding: 0px;
   margin: 0px;
 }
+body {
+  background-color: #505f75;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* faz parte do cabeçalho */
 header {
   background-color: #333;
   color: #fff;
@@ -13,11 +20,6 @@ nav {
   align-items: center;
   list-style: none;
 }
-
-nav li {
-  margin: 0 10px;
-}
-
 a {
   color: #fff;
   text-decoration: none;
@@ -52,28 +54,14 @@ a {
   display: flex;
   
 }
+
+/*faz parte da página index.html */
+
 p {
   text-align: justify;
   margin-inline: 30px;
   font-size: 22px;
   color: black;
-}
-
-body {
-  background-color: #505f75;
-}
-section {
-  background-color: #505f75;
-  
-}
-
-
-
-h2 {
-  color:black;
-  padding-top: 10px;
-  font-size: 40px;
-  text-align: center;
 }
 h3 {
   color:black;
@@ -83,34 +71,21 @@ h3 {
   margin-block: 50px;
 }
 
+/* faz parte do rodapé*/
+footer {
+  width: auto;
+  padding-top: 100px;
+  color: #fff;
+}
 .items {
   display: flex;
   justify-content: space-between;
   margin-inline: 50px;
   padding-block: 20px;
-  background-color: #000000;
+  
 }
-
-
 ul {
   list-style: none;
-}
-
-.items > ul > li  {
-  background-color: #000000;
-  color: #fff;
-}
-
-
-
-
-
-footer {
-  width: auto;
-  height: auto;
-  padding-block: 65px;
-  background-color: #000000;
-  color: #fff;
 }
 .c {
   margin-top: 700px;
@@ -118,6 +93,28 @@ footer {
 .l {
   margin-top: 550px;
 }
+h4 {
+  font-size: 50pt;
+  text-align: end;
+  padding-right: 100px;
+  animation: slide-in 2s forwards;
+}
+.items2 {
+  display: flex;
+  justify-content: center;
+  margin-inline: 50px;
+  padding-block: 20px;
+}
+
+/* faz parte da página de signup e login*/
+h2 {
+  color:black;
+  padding-top: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+
 
 
 .Sign_up {
@@ -207,14 +204,8 @@ a {
   font-size: larger;
   font-family: cursive;
 }
-h4 {
-  font-size: 50pt;
-  text-align: end;
-  padding-right: 100px;
-  background-color: #000000;
-  animation: slide-in 2s forwards;
-}
 
+/* faz parte da responsividade */
 @keyframes slide-in {
   from {
     transform: translateX(-100%);
@@ -224,7 +215,7 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
 
   .items {
     width: auto;
@@ -251,7 +242,6 @@ h4 {
     font-size: 20pt;
     text-align: end;
     padding-right: 100px;
-    background-color: #000000;
     animation: slide-in 2s forwards;
   }
   
@@ -264,24 +254,18 @@ h4 {
     }
   }
 
-  .end {
-    display: block;
-    flex-direction: column;
-    margin-top: 10px;
-    
-    
-  }
+  
   header {
-    background-color: blue;
     height: 150px;
     
   }
   footer {
     margin-top: 100px;
   }
-  .brand {
-    text-align: center;
+  .title {
+    font-size: 20pt;
   }
+ 
   
 }
 
