@@ -1,0 +1,69 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  background-color: black;
+}
+/* faz parte do cabeçalho */
+header {
+  color: #fff;
+  border-bottom: solid #666 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.title {
+  font-size: 25pt;
+  margin-left: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:active { color: #666;}
+a:first-child {color: #666;}
+a:hover {color: #666;}
+a:last-child {color: #666;}
+a:nth-child(2){color: #666;}
+a:visited {color: #666;}
+
+input:required{color: #666;}
+input:focus{color: #666;}
+input:checked{color: #666;}
+input:disabled{color: #666;}
+:not(p){ color: #666;}
+
+.dl {
+  display: flex;
+  
+}
+a {
+  text-decoration: none;
+  display: block;
+  margin-block: 20px;
+  text-align: center;
+  color: black;
+  font-size: larger;
+  font-family: cursive;
+}
+.foto-perfil{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+}
+select{
+  margin-right: 50px;
+}
+
+section{
+  margin-inline: 50px;
+  border-left: solid #666 5px;
+  border-right: solid #666 5px;
+  height: 100%;
+}
+#txtBusca{
+  width: 800px;
+  height: 40px;
+}
+
