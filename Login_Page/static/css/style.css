@@ -19,10 +19,20 @@ nav {
   align-items: center;
   list-style: none;
 }
-a {
-  color: #fff;
-  text-decoration: none;
-}
+
+a:active { color: #666;}
+a:first-child {color: #666;}
+a:hover {color: #666;}
+a:last-child {color: #666;}
+a:nth-child(2){color: #666;}
+a:visited {color: #666;}
+
+input:required{color: #666;}
+input:focus{color: #666;}
+input:checked{color: #666;}
+input:disabled{color: #666;}
+:not(p){ color: #666;}
+
 .title {
   font-size: 25pt;
   margin-left: 20px;
@@ -44,7 +54,7 @@ a {
 }
 
 .btn-warning {
-  background-color: #2e06ce;
+  background-color: #f1f1f1;
   color: #fbf6f6;
   margin-left: 10px;
   margin-right: 20px;
